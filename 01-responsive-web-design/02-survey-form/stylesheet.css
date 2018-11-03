@@ -1,0 +1,196 @@
+.container {
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    background-color: #CFFAE9;
+}
+
+#title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-column: span 4;
+    grid-row: 1;
+    text-align: center;
+}
+
+#description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 140%;
+    grid-column: 2 / 4;
+    text-align: center;
+}
+
+.form-wrapper {
+    grid-column: 2 / 4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#survey-form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 25%);
+    grid-column: 2 / 4;
+    background-color: #FAF6CF;
+    border-radius: 8px;
+}
+
+label {
+    text-align: right;
+    align-self: center;
+    padding-right: 15px;
+}
+
+#name-label {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    margin: 15px 0 15px 0;
+}
+
+#name {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    margin: 15px 15px 15px 0px;
+}
+
+#email-label {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    margin-bottom: 15px;
+}
+
+#email {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    margin: 0 15px 15px 0;
+}
+
+#number-label {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+
+#number {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    width: auto;
+    margin: 0 15px 15px 0;
+}
+
+#role-section {
+    display: inline-flex;
+    grid-row: 4;
+    grid-column: 1 / 3;
+    margin-bottom: 10px;
+}
+
+#role-section p {
+    flex-basis: 50%;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#role-section #dropdown {
+    flex-basis: auto;
+    height: 40px;
+    align-self: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0%;
+}
+
+#recommendation-section {
+    display: inline-flex;
+    grid-column: 1 / 3;
+    padding: 15px 0 15px 0;
+    background-color: #ADD8C7;
+}
+
+#recommendation-section p {
+    flex-basis: 50%;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#recommendation-section #radio-buttons {
+    flex-basis: auto;
+    align-self: center;
+}
+
+#like-section {
+    display: inline-flex;
+    grid-column: 1 / 3;
+    padding: 15px 0 15px 0;
+    background-color: #FAF6CF;
+}
+
+#like-section p {
+    flex-basis: 50%;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#like-section #dropdown {
+    flex-basis: auto;
+    height: 40px;
+    align-self: center;
+}
+
+#suggestions-section {
+    grid-column: 1 / 3;
+    display: inline-flex;
+    padding: 15px 0 15px 0;
+    background-color: #ADD8C7;
+}
+
+#suggestions-section p {
+    flex-basis: 50%;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-self: center;
+}
+
+#suggestions-section input {
+    flex-basis: auto;
+}
+
+#comments {
+    grid-column: 1 / 3;
+    display: inline-flex;
+    padding: 15px 0 15px 0;
+    background-color: #FAF6CF;
+}
+
+#comments p {
+    flex-basis: 50%;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-self: center;
+}
+
+#comments textarea {
+    flex-basis: 50%;
+    margin: 15px;
+    background-color: #FFFEF2;
+    border-radius: 8px;
+}
+
+#submit {
+    grid-column: 1 / 3;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 50%;
+    margin: auto;
+}
