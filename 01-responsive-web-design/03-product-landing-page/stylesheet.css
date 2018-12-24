@@ -190,8 +190,6 @@ h1 {
     grid-column: 2 / 3;
 }
 
-/* TODO: create margin lines for pricing container boxes */
-
 #pricing-container {
     display: grid;
     grid-template-columns: 14% 24% 24% 24% 14%;
@@ -210,18 +208,18 @@ h1 {
         display: grid;
         grid-template-columns: 100%;
         grid-template-areas:
-        "b-title-l"
-        "b-price-l"
-        "b-feats-l"
-        "b-buttn-l"
-        "b-title-c"
-        "b-price-c"
-        "b-feats-c"
-        "b-buttn-c"
-        "b-title-r"
-        "b-price-r"
-        "b-feats-r"
-        "b-buttn-r";
+            "b-title-l"
+            "b-price-l"
+            "b-feats-l"
+            "b-buttn-l"
+            "b-title-c"
+            "b-price-c"
+            "b-feats-c"
+            "b-buttn-c"
+            "b-title-r"
+            "b-price-r"
+            "b-feats-r"
+            "b-buttn-r";
     }
 }
 
