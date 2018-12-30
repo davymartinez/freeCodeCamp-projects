@@ -50,6 +50,12 @@ header {
     padding: 0px;
 }
 
+@media screen and (max-width: 800px) {
+    #navbar ul {
+        font-size: small;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #navbar ul {
         display: inline;
@@ -71,6 +77,7 @@ header {
 @media screen and (max-width: 600px) {
     #navbar li {
         display: inline;
+        padding: 0px 10px;
     }
 }
 
