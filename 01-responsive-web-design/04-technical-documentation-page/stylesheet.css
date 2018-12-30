@@ -1,5 +1,20 @@
+/* Color palette: https://www.colourlovers.com/palette/490780/The_First_Raindrop */
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
 body {
     margin: 0px;
+    background-color: #E8F3F8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 #navbar {
@@ -9,6 +24,8 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    background-color: #C2CBCE;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -16,37 +33,45 @@ body {
         position: fixed;
         top: 0%;
         width: 100%;
+        height: 15%;
     }
+}
+
+#navbar header {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 2px;
 }
 
 #navbar ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    border: 1px solid black;
 }
 
 @media screen and (max-width: 600px) {
     #navbar ul {
         display: inline;
         border: none;
+        font-size: smaller;
     }
 }
 
 #navbar li {
-    text-align: justify;
-    border-bottom: 1px solid black;
+    font-weight: bold;
+    padding: 16px 4px;
+}
+
+#navbar li:hover {
+    background-color: #81A8B8;
+    color: #E8F3F8;
 }
 
 @media screen and (max-width: 600px) {
     #navbar li {
         display: inline;
-        border-bottom: none;
     }
-}
-
-#navbar li:last-child {
-    border-bottom: none;
 }
 
 #navbar li a {
@@ -55,9 +80,14 @@ body {
     text-decoration: none;
 }
 
+#navbar li a:hover {
+    color: #E8F3F8;
+}
+
 @media screen and (max-width: 600px) {
     #navbar li a {
         display: inline;
+        padding: 16px;
     }
 }
 
@@ -68,7 +98,16 @@ body {
 
 @media screen and (max-width: 600px) {
     #main-doc {
-        margin: 15% 1% 1% 1%;
+        margin: 35% 2%;
         padding: 1px;
     }
+}
+
+code {
+    background-color: #DBE6EC;
+    font-size: large;
+}
+
+#code-block {
+    background-color: #DBE6EC;
 }
