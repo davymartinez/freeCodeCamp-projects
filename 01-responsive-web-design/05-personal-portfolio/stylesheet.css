@@ -1,0 +1,22 @@
+#navbar {
+  display: flex;
+  position: fixed;
+  top: 0px;
+}
+
+#navbar ul {
+  list-style-type: none;
+}
+
+#navbar li {
+  display: inline;
+}
+
+header {
+  position: relative;
+  top: 50px;
+}
+
+#welcome-section {
+  height: 100vh;
+}
