@@ -1,5 +1,9 @@
 /* Color palette: "Odd but trendy" [https://www.colourlovers.com/palette/132637/Odd_but_trendy] */
 
+body {
+  background-color: #E0EFF1;
+}
+
 #navbar {
   display: flex;
   position: fixed;
@@ -20,14 +24,36 @@
   margin: 4em;
 }
 
+/* TODO: try out vh units (viewport height %) in the different sections */
+
 header {
-  padding-top: 120px;
+  padding-top: 160px;
   text-align: center;
-  background-color: #E0EFF1;
 }
 
 #welcome-section {
   height: 75vh;
+}
+
+#welcome-section hr {
+  margin: 80px;
+  color: #7DB4B5;
+}
+
+#welcome-section #skills {
+  padding: 10px;
+}
+
+#about {
+  text-align: center;
+}
+
+#about h2 {
+  /* margin-top: 40px; */
+}
+
+#projects h2 {
+  text-align: center;
 }
 
 .project-container {
@@ -39,7 +65,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
-  background-color: #E0EFF1;
 }
 
 .project-tile {
@@ -58,4 +83,13 @@ header {
 
 .project-tile caption {
   display: block;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact #list-inline {
+  list-style: none;
+  padding-left: 0px;
 }
