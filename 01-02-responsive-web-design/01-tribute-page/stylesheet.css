@@ -1,0 +1,48 @@
+h1, h2 {
+    font-family: Helvetica;
+    text-align: center;
+  }
+  
+  figure {
+    background-color: #dddddd;
+    margin: 0 10% 0 10%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+  
+  img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+  
+  figcaption {
+    font-family: Trebuchet MS;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  body {
+    font-family: Trebuchet MS;
+  }
+  
+  ul {
+    margin: 0 20% 5% 20%;
+  }
+  
+  li {
+    line-height: 150%;
+  }
+  
+  q {
+    display: block;
+    margin: 0 10% 1% 10%;
+    font-family: Helvetica;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .closing {
+    text-align: center;
+    font-size: 18px;
+  }

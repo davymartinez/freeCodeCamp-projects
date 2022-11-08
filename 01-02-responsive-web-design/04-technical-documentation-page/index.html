@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getting started with Bootstrap</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Getting Started</header>
+        <ul>
+            <li>
+                <a href="#introduction" class="nav-link">Introduction</a>
+            </li>
+            <li>
+                <a href="#quickstart" class="nav-link">Quickstart</a>
+            </li>
+            <li>
+                <a href="#css" class="nav-link">CSS</a>
+            </li>
+            <li>
+                <a href="#javascript" class="nav-link">JavaScript</a>
+            </li>
+            <li>
+                <a href="#starter_template" class="nav-link">Starter template</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.</p>
+            <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. With it you can quickly prototype your ideas or build your entire app using Bootstrap's own Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+        </section>
+        <section class="main-section" id="quickstart">
+            <header>Quickstart</header>
+            <p>To quickly add Bootstrap to your project just use BootstrapCDN, a content delivery network kindly provided for free by the folks at StackPath. If you are using a package manager or need to download the source files, then you can <a href="https://getbootstrap.com/docs/4.2/getting-started/download/">head to the downloads page</a>.</p>
+        </section>
+        <section class="main-section" id="css">
+            <header>CSS</header>
+            <p>Copy-paste the stylesheet <code>&lt;link&gt;</code> into your <code>&lt;head&gt;</code> section before all other stylesheets to load our Bootstrap CSS.</p>
+            <div id="code-block">
+                <code>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"&gt;</code>
+            </div>
+            <br>
+        </section>
+        <section class="main-section" id="javascript">
+            <header>JavaScript</header>
+            <p>Many of Bootstrap's components require the use of JavaScript to function. Specifically, they require <a href="https://jquery.com/">jQuery</a>, <a href="https://popper.js.org/">Popper.js</a>, and Bootstrap's own JavaScript plugins. Place the following &lt;script&gt;s near the end of your pages, right before the closing &lt;/body&gt; tag, to enable them. jQuery must come first, then Popper.js, and then Bootstrap's JavaScript plugins.</p>
+            <p>We use jQuery’s slim build, but the full version is also supported.</p>
+            <div id="code-block">
+                <code>&lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">&lt;/script&gt;</code><br>
+                <br>
+                <code>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">&lt;/script&gt;</code><br>
+                <br>
+                <code>&lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">&lt;/script&gt;</code><br>
+            </div>
+            <p>If you are curious about the components that explicitly require jQuery, our JS, and Popper.js, just take a look at the list below. If you’re at all unsure about the general page structure, keep reading for an example page template.</p>
+            <p>Our <code>bootstrap.bundle.js</code> and <code>bootstrap.bundle.min.js</code> include <a href="https://popper.js.org/">Popper.js</a>, but not <a href="https://jquery.com/">jQuery</a>. For more information about what’s included in Bootstrap, please see our <a href="https://getbootstrap.com/docs/4.1/getting-started/contents/#precompiled-bootstrap">contents</a> section.</p>
+            <p>Components requiring JavaScript:</p>
+            <ul>
+                <li>Alerts for dismissing</li>
+                <li>Buttons for toggling states and checkbox/radio functionality</li>
+                <li>Carousel for all slide behaviors, controls, and indicators</li>
+                <li>Collapse for toggling visibility of content</li>
+                <li>Dropdowns for displaying and positioning (also requires <a href="https://popper.js.org/">Popper.js</a>)</li>
+                <li>Modals for displaying, positioning, and scroll behavior</li>
+                <li>Navbar for extending our Collapse plugin to implement responsive behavior</li>
+                <li>Tooltips and popovers for displaying and positioning (also requires <a href="https://popper.js.org/">Popper.js</a>)</li>
+                <li>Scrollspy for scroll behavior and navigation updates</li>
+            </ul>
+        </section>
+        <section class="main-section" id="starter_template">
+            <header>Starter template</header>
+            <p>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:</p>
+            <div id="code-block">
+                <code>
+                    &lt;!doctype html&gt;<br>
+                    &lt;html lang="en"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Required meta tags --&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Bootstrap CSS --&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Hello, world!&lt;/title&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello, world!&lt;/h1&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Optional JavaScript --&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&gt;&lt;/script&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">&lt;/script&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">&lt;/script&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </code>
+            </div>
+            <p>That’s all you need for overall page requirements. Visit the <a href="https://getbootstrap.com/docs/4.1/layout/overview/">Layout docs</a> or <a href="https://getbootstrap.com/docs/4.1/examples/">our official examples</a> to start laying out your site’s content and components.</p>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

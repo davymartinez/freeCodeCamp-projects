@@ -1,0 +1,181 @@
+/* Color palette: "Odd but trendy" [https://www.colourlovers.com/palette/132637/Odd_but_trendy] 
+https://www.colourlovers.com/palette/15/tech_light */
+
+body {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+a {
+  color: #4DBCE9;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+hr {
+  color: #7DB4B5;
+}
+
+#navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-content: center;
+  top: 0px;
+  width: 100%;
+  background-color: #D1E751;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+#navbar ul {
+  list-style-type: none;
+}
+
+#navbar li {
+  display: inline;
+  margin: 8em;
+}
+
+@media screen and (max-width: 800px) {
+  #navbar li {
+    margin: 1em;
+  }
+}
+
+header {
+  padding-top: 20vh; /*150px*/
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    padding-top: 10vh;
+  }
+}
+
+header h1 {
+  font-family: 'Source Code Pro', monospace;
+  color: #26ADE4;
+  font-size: 48px;
+  text-align: left;
+}
+
+#about h2, #projects h2, #contact h2 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;;
+  color: #26ADE4;
+}
+
+header h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  text-align: right;
+  color: #4DBCE9
+}
+
+#welcome-section {
+  height: 80vh; /*497px*/
+}
+
+@media screen and (max-width: 800px) {
+  #welcome-section {
+    height: 100%;
+  }
+}
+
+#welcome-section hr {
+  margin: 48px;
+}
+
+#profile-pic img {
+  display: block;
+  position: relative;
+  z-index: -1;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#skills p {
+  color: #E0EFF1;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+}
+
+#about, #projects, #contact {
+  margin-top: 48px;
+  text-align: center;
+}
+
+@media screen and (max-width: 667px) {
+  #about, #projects, #contact {
+    margin-top: 40px;
+  }
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". ." ". .";
+  gap: 16px 8px;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  padding: 18px 18px;
+  margin: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".";
+  }
+}
+
+.project-tile {
+  display: block;
+}
+
+.project-tile img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 667px) {
+  .project-tile img {
+    width: 100%;
+  }
+}
+
+.project-tile p {
+  text-align: center;
+}
+
+.project-tile caption {
+  display: block;
+}
+
+#contact p {
+  text-align: center;
+}
+
+#contact #list-inline {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 18px;
+}
+
+#list-inline li {
+  padding: 7px;
+}

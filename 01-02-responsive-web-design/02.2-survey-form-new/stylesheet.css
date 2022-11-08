@@ -1,0 +1,114 @@
+body {
+    max-width: 1080px;
+    margin: 0 auto;
+    font-size: large;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient( 180deg, rgba(3, 54, 73, 0.9), rgba(3, 101, 100, 0.8) ), url("https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    filter: blur(2px);
+}
+
+h1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color:#E8DDCB;
+    margin-top: 4rem;
+}
+
+#description {
+    font-family: 'Prompt', sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #E8DDCB;
+}
+
+#survey-form {
+    font-family: 'Prompt', sans-serif;
+    max-width: 720px;
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    color: #E8DDCB;
+    background-color: #031634;
+    border-radius: 1.5%;
+}
+
+#name-label, #email-label, #number-label #form-p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+fieldset {
+    padding: 1.5rem;
+    border-style: hidden;
+}
+
+/*#personal-info-section {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}*/
+
+.input-group {
+    margin: 0 auto 0.5rem auto;
+    padding: 0.25rem;
+}
+
+input[type="text"], input[type="email"], input[type="number"], .dropdown {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.01rem;
+    margin: 0;
+    border-radius: 0.2rem;
+}
+
+.input-radio {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.input-checkbox {
+    display: block;
+    margin-bottom: 14px;
+}
+
+#comments {
+    width: 100%;
+    margin: 1px -4px 15px;
+}
+
+#submit-button {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.375rem 0.01rem;
+    margin: 0;
+    border-radius: 0.2rem;
+}
+
+button {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+    border-style: hidden;
+    background-color: #036564;
+    font-family: 'Prompt', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color:#E8DDCB;
+}

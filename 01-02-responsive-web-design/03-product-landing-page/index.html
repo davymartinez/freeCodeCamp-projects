@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Groovy Basses</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="https://res.cloudinary.com/cloudavid/image/upload/e_bgremoval/v1542853875/CrappyLogo_bwchku.png" alt="logo" width="256px">
+        </div>
+        <nav id="nav-bar">
+            <ul id="nav-bar-list">
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#see-them-in-action">See them in action</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Heading-->
+    <div id="heading">
+        <h1>Own a piece of the groove!</h1>
+    </div>
+    <!--Contact form-->
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+        <input type="submit" value="Yes, I want the groove!" id="submit">
+    </form>
+    <!--Features section-->
+    <section id="features">
+        <div id="features-container">
+            <div id="top-icon">
+                <i class="fas fa-tree"></i>
+            </div>
+            <h2 id="feat-top-h">Top-Notch Woods</h2>
+            <p id="feat-top-p">Your music deserves the best tone. Our selection of <strong>premium woods</strong> ensures your low notes will resonate through the ages. Choose between our wide selection of <strong>Alder</strong>, <strong>Cherry</strong>, <strong>Koa</strong>, <strong>Maple</strong>, <strong>Poplar</strong>, <strong>Cocobolo</strong>, and <strong>Wenge</strong> bodies and fretboards, and take our music to a whole new level of low-end, groovy goodness!</p>
+            <div id="mid-icon">
+                <i class="fas fa-microchip"></i>
+            </div>
+            <h2 id="feat-mid-h">Premium Electronics</h2>
+            <p id="feat-mid-p">Do you prefer <strong>active or passive pickups</strong>? Are you a <strong>single-coil or humbucker</strong> kind of player? Just choose your flavor and we'll deliver! Fancy an <strong>active, 3-band, parametric EQ</strong>? You got it! Want to explore tonal possibilities with <strong>MIDI pickups</strong>? We got you covered! Groovy Basses let you shape the sound you want.</p>
+            <div id="bot-icon">
+                <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h2 id="feat-bot-h">Guaranteed Quality</h2>
+            <p id="feat-bot-p">With Groovy Basses your bass-playing gets backed-up by our stringent <strong>quality control</strong> processes. Every step of our manufacturing chain is tightly supervised so the instrument that ends up in your hands is the best possible one. Our <strong>Quality Assurance System</strong> guarantees an optimal, premium playing experience.</p>
+        </div>
+    </section>
+    <!--Video section-->
+    <section id="see-them-in-action">
+        <div id="video-container">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ocZQz50n_YM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!--Pricing section-->
+    <section id="pricing">
+        <div id="pricing-container">
+            <h2 id="bass-title-left">4-string bass</h2>
+            <h3 id="bass-price-left">$1200</h3>
+            <ul id="bass-features-left">
+                <li>Bolted Wenge / Purpleheart neck</li>
+                <li>34" scale length</li>
+                <li>24 med jumbo frets</li>
+                <li>Active pickups</li>
+                <li>Vol / blend / bass / mid / treb controls</li>
+            </ul>
+            <button type="submit" class="bass-button" id="bass-button-left">Select</button>
+            <h2 id="bass-title-center">5-string bass</h2>
+            <h3 id="bass-price-center">$1800</h3>
+            <ul id="bass-features-center">
+                <li>Bolted Wenge / Purpleheart neck</li>
+                <li>34" scale length</li>
+                <li>24 med jumbo frets</li>
+                <li>Active pickups</li>
+                <li>Slap contour switch</li>
+            </ul>
+            <button type="submit" class="bass-button" id="bass-button-center">Select</button>
+            <h2 id="bass-title-right">6-string bass</h2>
+            <h3 id="bass-price-right">$2700</h3>
+            <ul id="bass-features-right">
+                <li>Bolted Wenge / Purpleheart neck-thru body</li>
+                <li>34" scale length</li>
+                <li>24 med jumbo frets</li>
+                <li>Active pickups</li>
+                <li>Custom parametric frequency selector</li>
+            </ul>
+            <button type="submit" class="bass-button" id="bass-button-right">Select</button>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer id="footer">
+        <ul id="footer-list">
+            <li class="footer-link"><a href="https://www.freecodecamp.com/privacy">Privacy</a></li>
+            <li class="footer-link"><a href="https://www.freecodecamp.com/terms">Terms</a></li>
+            <li class="footer-link"><a href="https://www.freecodecamp.com/contact">Contact</a></li>
+        </ul>
+        <p id="footer-p">&copy; Copyright 2018, David Martinez</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
