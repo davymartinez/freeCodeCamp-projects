@@ -1,0 +1,52 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+.table-wrap {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: auto;
+}
+
+.sql-commands tr:hover {
+    background-color: silver;
+}
+
+table, th, td {
+    border: 0.5px solid;
+    border-color:grey;
+    border-collapse: collapse;
+}
+
+.sql-commands th {
+    background-color: black;
+    color: burlywood;
+}
+
+tr td:nth-child(1) {
+    background-color:blanchedalmond ;
+    text-align: right;
+}
+
+th, td {
+    padding: 20px;
+}
+
+code {
+    font-size: large;
+}
+
+a:hover {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+caption {
+    caption-side: bottom;
+    padding-top: 10px;
+    font-style: italic;
+}

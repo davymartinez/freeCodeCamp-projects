@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PostgreSQL commands</title>
+</head>
+<body>
+    <h1>A list of useful PostgreSQL commands</h1>
+    <p>With the following commands you're well on your way to create and manage your own PostgreSQL database:</p>
+    <div class="table-wrap">
+        <table class="sql-commands">
+            <caption>Useful PostgreSQL commands</caption>
+            <thead>
+                <tr>
+                    <th>If you want to do this...</th>
+                    <th>Switch your Caps Lock key and type this:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Log in to Postgres</td>
+                    <td><code>psql --username=user dbname=postgres</code> -- where user changes depending on your actual user</td>
+                <tr>    
+                    <td>List databases</td>
+                    <td><code>\l</code></td>
+                </tr>
+                <tr>
+                    <td>Create a database</td>
+                    <td><code>CREATE DATABASE database_name;</code></td>
+                </tr>
+                <tr>
+                    <td>Connect to a database</td>
+                    <td><code>\c database_name</code></td>
+                </tr>
+                <tr>
+                    <td>Display tables of a database</td>
+                    <td><code>\d</code></td>
+                </tr>
+                <tr>
+                    <td>Create a table inside a database</td>
+                    <td><code>CREATE TABLE table_name();</code></td>
+                </tr>
+                <tr>
+                    <td>Create a table with pre-defined columns</td>
+                    <td><code>CREATE TABLE table_name(column_name DATATYPE CONSTRAINTS);</code></td>
+                </tr>
+                <tr>
+                    <td>View details of a table</td>
+                    <td><code>\d table_name</code></td>
+                </tr>
+                <tr>
+                    <td>Add a column to a table</td>
+                    <td><code>ALTER TABLE table_name ADD COLUMN column_name DATATYPE;</code> -- examples of data types include CHAR(size), VARCHAR(size), BOOL, INT(size), SERIAL, and DATE, among others -- more types can be found <a href="https://www.w3schools.com/sql/sql_datatypes.asp" target="_blank">here</a></td>
+                </tr>
+                <tr>
+                    <td>Add a column with constraints to a table</td>
+                    <td><code>ADD TABLE table_name ADD COLUMN column name DATATYPE CONSTRAINTS;</code></td>
+                </tr>
+                <tr>
+                    <td>Remove a column from a table</td>
+                    <td><code>ALTER TABLE table_name DROP COLUMN column_name;</code></td>
+                </tr>
+                <tr>
+                    <td>Rename a column from a table</td>
+                    <td><code>ALTER TABLE table_name RENAME COLUMN column_name TO new_name;</code></td>
+                </tr>
+                <tr>
+                    <td>Insert rows into a table</td>
+                    <td><code>INSERT INTO table_name(column_1, column_2, column_3) VALUES(value_1, value_2, value_3);</code></td>
+                </tr>
+                <tr>
+                    <td>Insert various rows at once</td>
+                    <td><code>INSERT INTO table_name(column_1, column_2, column_3) VALUES(value_1, value_2, value_3), (value_4, value_5, value_6), (value_7, value_8, value_9);</code></td>
+                </tr>
+                <tr>
+                    <td>View or query data in a table</td>
+                    <td><code>SELECT columns FROM table_name;</code> -- use an asterisk (*) to see all the columns at once</td>
+                </tr>
+                <tr>
+                    <td>View it in order</td>
+                    <td><code>SELECT columns FROM table_name ORDER BY column=name;</code></td>
+                </tr>
+                <tr>
+                    <td>View it with conditions (i.e., just specific rows)</td>
+                    <td><code>SELECT columns FROM table_name WHERE condition;</code></td>
+                </tr>
+                <tr>
+                    <td>Delete arow from a table</td>
+                    <td><code>DELETE FROM table_name WHERE condition;</code> -- more info on WHERE <a href="https://www.w3schools.com/sql/sql_where.asp" target="_blank">here</a></td>
+                </tr>
+                <tr>
+                    <td>Delete or drop a table</td>
+                    <td><code>DROP TABLE table_name;</code></td>
+                </tr>
+                <tr>
+                    <td>Rename a database:</td>
+                    <td><code>ALTER DATABASE database_name RENAME TO new_database_name;</code></td>
+                </tr>
+                <tr>
+                    <td>Update a value in a table</td>
+                    <td><code>UPDATE table_name SET column_name=new_value WHERE condition;</code></td>
+                </tr>
+                <tr>
+                    <td>Add a primary key to a table</td>
+                    <td><code>ALTER TABLE table_name ADD PRIMARY KEY(column_name);</code></td>
+                </tr>
+                <tr>
+                    <td>Add a composite primary key to a table</td>
+                    <td><code>ALTER TABLE table_name ADD PRIMARY KEY(column1, column2);</code></td>
+                </tr>
+                <tr>
+                    <td>Delete or drop a constraint (such as a primary key) from a table</td>
+                    <td><code>ALTER TABLE table_name DROP CONSTRAINT constraint_name;</code></td>
+                </tr>
+                <tr>
+                    <td>Add a column as a foreign key in order to relate rows from a table to another one</td>
+                    <td><code>ALTER TABLE table_name ADD COLUMN column_name DATATYPE REFERENCES referenced_table_name(referenced_column_name);</code></td>
+                </tr>
+                <tr>
+                    <td>Add a column as a foreign key with constraints to create one-to-many relationships</td>
+                    <td><code>ALTER TABLE table_name ADD COLUMN column_name DATATYPE CONSTRAINT REFERENCES referenced_table_name(referenced_column_name);</code></td>
+                </tr>
+                <tr>
+                    <td>Set an existing column as a foreing key</td>
+                    <td><code>ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES referenced_table(referenced_column);</code></td>
+                </tr>
+                <tr>
+                    <td>Add a unique constraint to a foreing key (to enforce one-to-one relationships)</td>
+                    <td><code>ALTER TABLE table_name ADD UNIQUE(column_name);</code></td>
+                </tr>
+                <tr>
+                    <td>Add a <code>NULL</code> constraint to a column (such as a foreign key one)</td>
+                    <td><code>ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;</code></td>
+                </tr>
+                <tr>
+                    <td>View or query data from two related tables with a <code>JOIN</code></td>
+                    <td><code>SELECT columns FROM table_1 FULL JOIN table_2 ON table_1.primary_key_column = table_2.foreign_key_column;</code></td>
+                </tr>
+                <tr>
+                    <td>View or query data from three related tables, when one is a junction table, with a <code>JOIN</code></td>
+                    <td><code>SELECT columns FROM junction_table FULL JOIN table_1 ON junction_table.foreign_key_column = table_1.primary_key_column FULL JOIN table_2 ON junction_table.foreign_key_column = table_2.primary_key_column;</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
